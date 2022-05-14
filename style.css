@@ -1,0 +1,23 @@
+/* Universal selectors first */
+
+* {
+    background-color: teal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.grid {
+    /* Makes the numbers go horizontal instead of vertical because default value is flex-direction: row */
+    display: flex;
+    /* Makes the numbers and their margin etc cascade down to less per row when screen is made smaller */
+    flex-wrap: wrap;
+}
+
+.grid div {
+    /* Adds space around number */
+    padding: 50px;
+    /* Adds space between numbers outside padding and border */
+    margin: 20px;
+    border-radius: 10px;
+    border-color: bisque;
+    border-style: double;
+}
